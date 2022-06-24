@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+
+class Project(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    location = models.TextField(max_length=200)
+    goal = models.IntegerField()
+    image = models.URLField()
+    date_due = models.DateTimeField()
+    is_open = models.BooleanField()
+    date_created = models.DateTimeField()
+    owner = models.CharField(max_length=200)
