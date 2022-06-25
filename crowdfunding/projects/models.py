@@ -4,7 +4,7 @@ from django.db import models
 class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    location = models.TextField(max_length=200)
+    location = models.CharField(max_length=200)
     goal = models.IntegerField()
     image = models.URLField()
     date_due = models.DateTimeField()
