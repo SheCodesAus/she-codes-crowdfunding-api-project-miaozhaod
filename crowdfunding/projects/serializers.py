@@ -6,7 +6,7 @@ class PledgeSerializer(serializers.Serializer):
     id = serializers.ReadOnlyField()
     amount = serializers.IntegerField()
     comment = serializers.CharField(max_length=200)
-    anonymouse = serializers.BooleanField()
+    anonymous = serializers.BooleanField()
     supporter = serializers.CharField(max_length=200)
     project_id = serializers.IntegerField()
 
