@@ -18,3 +18,13 @@ class ProjectList(APIView):
             return Response(serializer.data)
         else:
             return Response(serializer.errors, status=400)
+
+
+class ProjectDetail(APIView):
+    def get_object(self, pk):
+        return Project.objects.get(pk=pk)
+
+    def get(self, request, pk):
+        project = self.get_object(pk)
+        serializer = ProjectSerializer(project)
+        return Response(serializer.data)
