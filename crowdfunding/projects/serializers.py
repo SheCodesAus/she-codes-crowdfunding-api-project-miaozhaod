@@ -1,5 +1,17 @@
 from rest_framework import serializers
-from .models import Project
+from .models import Project, Pledge
+
+
+class PledgeSerializer(serializers.Serializer):
+    id = serializers.ReadOnlyField()
+    amount = serializers.IntegerField()
+    comment = serializers.CharField(max_length=200)
+    anonymouse = serializers.BooleanField()
+    supporter = serializers.CharField(max_length=200)
+    project_id = serializers.IntegerField()
+
+    def create(self, validated_data):
+        return Pledge.objects.create(**validated_data)
 
 
 class ProjectSerializer(serializers.Serializer):
