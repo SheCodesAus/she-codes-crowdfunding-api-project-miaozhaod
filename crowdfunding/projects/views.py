@@ -21,6 +21,19 @@ class PledgeList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class PledgeDetail(APIView):
+    def get_object(self, pk):
+        try:
+            return Pledge.objects.get(pk=pk)
+        except Pledge.DoesNotExist:
+            raise Http404
+
+    def get(self, request, pk):
+        pledge = self.get_object(pk)
+        serializer = PledgeSerializer(pledge)
+        return Response(serializer.data)
+
+
 class ProjectList(APIView):
     def get(self, request):
         projects = Project.objects.all()
