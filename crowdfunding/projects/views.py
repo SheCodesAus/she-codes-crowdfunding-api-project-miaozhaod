@@ -44,7 +44,9 @@ class PledgeDetail(APIView):
 class ProjectList(APIView):
     def get(self, request):
         projects = Project.objects.all()
+        # translate projects into sth frontend can understand
         serializer = ProjectSerializer(projects, many=True)
+        # send response back to frontend
         return Response(serializer.data)
 
     def post(self, request):
@@ -71,4 +73,3 @@ class ProjectDetail(APIView):
         project = self.get_object(pk)
         project.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
