@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from .models import Project, Pledge
 from .serializers import ProjectSerializer, PledgeSerializer, ProjectDetailSerializer
 from django.http import Http404
-from rest_framework import status
+from rest_framework import status, permissions
 
 
 class PledgeList(APIView):
@@ -42,6 +42,9 @@ class PledgeDetail(APIView):
 
 
 class ProjectList(APIView):
+    # used when sending post request 
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
     def get(self, request):
         projects = Project.objects.all()
         # translate projects into sth frontend can understand
