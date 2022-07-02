@@ -42,7 +42,7 @@ class ProjectDetailSerializer(ProjectSerializer):
         instance.location = validated_data.get('location', instance.location)
         instance.goal = validated_data.get('goal', instance.goal)
         instance.image = validated_data.get('image', instance.image)
-        instance.date_due = validated_data.get('date_due', instance.date)
+        instance.date_due = validated_data.get('date_due', instance.date_due)
         instance.is_open = validated_data.get('is_open', instance.is_open)
         instance.date_created = validated_data.get('date_created', instance.date_created)
         instance.owner = validated_data.get('owner', instance.owner)
