@@ -25,6 +25,8 @@ class PledgeList(APIView):
 
 
 class PledgeDetail(APIView):
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+
     def get_object(self, pk):
         try:
             return Pledge.objects.get(pk=pk)
