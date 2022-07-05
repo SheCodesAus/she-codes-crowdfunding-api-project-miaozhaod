@@ -19,5 +19,6 @@ class Project(models.Model):
     date_due = models.DateTimeField()
     is_open = models.BooleanField()
     date_created = models.DateTimeField()
+    # date_created = models.DateTimeField(auto_now_add=True, null=True)
     # owner = models.CharField(max_length=200)
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name="owner_projects")
