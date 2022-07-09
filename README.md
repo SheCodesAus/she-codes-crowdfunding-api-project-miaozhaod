@@ -1,11 +1,11 @@
 # she-codes-crowdfunding-api-project-miaozhaod
-This is a Django Rest Framework assignment subbmited for She-Codes-Django-Project
+📚 This is a Django Rest Framework assignment submitted for She-Codes-Django-Project
 
 ## The title of the website
 📷 PixelFoto
 
 ## A paragraph detailing the purpose and target audience for the website
-Raise funds for photographers who would like to hold their own exhibitions, the supporters can raise funds for the photographers they like, and if the goal is achieved, those who support the photographer can get a free ticket for the exhibition.
+💰 Raise funds for photographers who would like to hold their own exhibitions, the supporters can raise funds for the photographers they like, and if the goal is achieved, those who support the photographer can get a free ticket for the exhibition.
 
 ## The features your MVP will include
 - [x] Authentication: Login
