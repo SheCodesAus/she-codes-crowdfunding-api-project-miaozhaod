@@ -27,7 +27,7 @@ Raise funds for photographers who would like to hold their own exhibitions, the 
 | https://she-codes-crowdfunding-miao.herokuapp.com/users/[id] | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects/[id] | GET | N/A | N/A |
-| https://she-codes-crowdfunding-miao.herokuapp.com/projects/ | POST | <pre><code>{</code><br><code>  "title": "title",</code><br><code>  "description": "description",</code><br><code>  "location": "location",</code><br><code>  "goal": 100,</code><br><code>  "image": "https://image.com",</code><br><code>  "date_due": "date_due",</code><br><code>  "is_open": true,</code><br><code>  "date_created": "date_created",</code><br><code>}</code></pre> | N/A |
+| https://she-codes-crowdfunding-miao.herokuapp.com/projects/ | POST | <pre><code>{</code><br><code>  "title": "title",</code><br><code>  "description": "description",</code><br><code>  "location": "location",</code><br><code>  "goal": 100,</code><br><code>  "image": "https://image.com",</code><br><code>  "date_due": "date_due",</code><br><code>  "is_open": true,</code><br><code>  "date_created": "date_created",</code><br><code>}</code></pre> | Beared Token |
 
 
 
