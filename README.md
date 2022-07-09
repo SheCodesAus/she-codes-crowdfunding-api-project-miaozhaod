@@ -38,7 +38,17 @@
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/ | POST | <pre><code>{</code><br><code>  "amount": 10,</code><br><code>  "comment": "comment",</code><br><code>  "anonymous": false,</code><br><code>  "id": 1,</code><br><code>}</code></pre> | Bearer Token |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/[id] | DELETE | N/A | Bearer Token |
 
+## A database schema
+<img width="1017" alt="Screen Shot 2022-07-09 at 5 17 59 pm" src="https://user-images.githubusercontent.com/89491470/178095972-e1b66bd5-0382-4471-8b31-3b5a4a1b15d7.png">
 
+## Wireframes
+[Full version (TBC)](https://www.figma.com/file/NTHZLvgIOzZ4jT9UOWFFLT/She-Codes-DRF?node-id=0%3A1)
+
+## Colour Scheme
+<img width="984" alt="Screen Shot 2022-07-09 at 5 21 15 pm" src="https://user-images.githubusercontent.com/89491470/178096093-8e85d108-cf50-4403-a1cc-d09599a27908.png">
+
+## Heading and body fonts
+<img width="571" alt="Screen Shot 2022-07-09 at 5 22 09 pm" src="https://user-images.githubusercontent.com/89491470/178096131-e7a6bc8d-449a-41bf-8213-3f9e2fc5807f.png">
 
 
 
