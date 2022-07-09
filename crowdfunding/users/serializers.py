@@ -14,3 +14,13 @@ class CustomUserSerializer(serializers.Serializer):
     def create(self, validated_data):
         validated_data['password'] = make_password(validated_data.get('password'))
         return CustomUser.objects.create(**validated_data)
+
+    def update(self, instance, validated_data):
+        instance.username = validated_data.get('username', instance.username)
+        instance.email = validated_data.get('email', instance.email)
+        instance.bio = validated_data.get('bio', instance.bio)
+        instance.avatar = validated_data.get('avatar', instance.avatar)
+        if "password" in validated_data.keys():
+            instance.password = make_password(validated_data.get('password', instance.password))
+        instance.save()
+        return instance
