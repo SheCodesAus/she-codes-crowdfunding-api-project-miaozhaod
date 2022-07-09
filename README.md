@@ -42,18 +42,8 @@
 <img width="1017" alt="Screen Shot 2022-07-09 at 5 17 59 pm" src="https://user-images.githubusercontent.com/89491470/178095972-e1b66bd5-0382-4471-8b31-3b5a4a1b15d7.png">
 
 ## Insomnia Screenshots
-### Environment Setup:
+### Detailed screenshots can be found at the folder named `screenshots`, here is how Insomnia's environment is setup:
 <img width="1552" alt="Endpoints" src="https://user-images.githubusercontent.com/89491470/178096594-ec811e97-e216-4ba9-81f8-2fcaf78b2951.png">
-
-| API | Screenshot | Note |
-| --- | ---------- | ---- |
-| Get All Users | <img width="1552" alt="Users - Get All" src="https://user-images.githubusercontent.com/89491470/178096482-b80f8fd8-b497-4994-8922-2d2edfb6549a.png"> | N/A |
-| Get User by ID | <img width="1552" alt="Users - Get by ID" src="https://user-images.githubusercontent.com/89491470/178096529-5d9ba8e2-cb26-46a0-8155-9b42271ee92c.png"> | N/A |
-| Register User | <img width="1552" alt="Register" src="https://user-images.githubusercontent.com/89491470/178096557-c1d15154-434d-45ec-a008-a6de641eb056.png"> | N/A |
-| Update User Fail | <img width="1552" alt="User - update failed due to authentication" src="https://user-images.githubusercontent.com/89491470/178096625-47f49dc2-e5d5-43d3-aae1-3ae73ad58307.png"> | Not allowed due to authentication fail | 
-| Update User Success | <img width="1552" alt="User - update sucess" src="https://user-images.githubusercontent.com/89491470/178096659-0f1877af-75fc-445a-a8fb-360e40b12da1.png"> | Success for `request.user` |
-| Login Fail | <img width="1552" alt="Login - failed to authorise" src="https://user-images.githubusercontent.com/89491470/178096723-82d9ae34-8c39-49b7-8451-dfed076f02f8.png"> | Failed due to invalid credentials | 
-| Login Success | <img width="1552" alt="Login - sucess with token returned" src="https://user-images.githubusercontent.com/89491470/178096749-9fc806db-6dc1-47e0-933d-e06b5e0f9425.png"> | Token returned | 
 
 ## Wireframes
 [Full version (TBC)](https://www.figma.com/file/NTHZLvgIOzZ4jT9UOWFFLT/She-Codes-DRF?node-id=0%3A1)
