@@ -20,16 +20,19 @@ Raise funds for photographers who would like to hold their own exhibitions, the 
 ## An API specification
 | Endpoint                                                  | Method    | Body                   | Authorization |
 | --------------------------------------------------------- | --------- | ---------------------- | ------------- |
+| **Users and Authentication Endpoints:**|
+| https://she-codes-crowdfunding-miao.herokuapp.com/users | GET | N/A | N/A |
+| https://she-codes-crowdfunding-miao.herokuapp.com/users/[id] | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/users/  | POST | <pre><code>{</code><br><code>  "username": "test",</code><br><code>  "email": "test@mysite.com",</code><br><code>  "password": "password",</code><br><code>  "bio": "bio",</code><br><code>  "avatar": "https://avatar.com",</code><br><code>}</code></pre> | N/A          |
 | https://she-codes-crowdfunding-miao.herokuapp.com/users/[id]/ | PUT | <pre><code>{</code><br><code>  "anyKey": "anyValue",</code><br><code>}</code></pre> | Bearer Token          |
 | https://she-codes-crowdfunding-miao.herokuapp.com/api-token-auth/ | POST | <pre><code>{</code><br><code>  "username": "username",</code><br><code>  "password": "password",</code><br><code>}</code></pre> | N/A |
-| https://she-codes-crowdfunding-miao.herokuapp.com/users | GET | N/A | N/A |
-| https://she-codes-crowdfunding-miao.herokuapp.com/users/[id] | GET | N/A | N/A |
+| **Projects Endpoints:**|
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects/[id] | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects/ | POST | <pre><code>{</code><br><code>  "title": "title",</code><br><code>  "description": "description",</code><br><code>  "location": "location",</code><br><code>  "goal": 100,</code><br><code>  "image": "https://image.com",</code><br><code>  "date_due": "date_due",</code><br><code>  "is_open": true,</code><br><code>  "date_created": "date_created",</code><br><code>}</code></pre> | Bearer Token |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects/[id] | PUT | <pre><code>{</code><br><code>  "anyKey": "anyValue",</code><br><code>}</code></pre> | Bearer Token |
 | https://she-codes-crowdfunding-miao.herokuapp.com/projects/[id] | DELETE | N/A | Bearer Token |
+| **Pledges Endpoints:**|
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/[id] | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/ | POST | <pre><code>{</code><br><code>  "amount": 10,</code><br><code>  "comment": "comment",</code><br><code>  "anonymous": false,</code><br><code>  "id": 1,</code><br><code>}</code></pre> | Bearer Token |
