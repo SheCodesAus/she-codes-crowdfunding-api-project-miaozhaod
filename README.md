@@ -33,6 +33,7 @@ Raise funds for photographers who would like to hold their own exhibitions, the 
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/[id] | GET | N/A | N/A |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/ | POST | <pre><code>{</code><br><code>  "amount": 10,</code><br><code>  "comment": "comment",</code><br><code>  "anonymous": false,</code><br><code>  "id": 1,</code><br><code>}</code></pre> | Bearer Token |
+| https://she-codes-crowdfunding-miao.herokuapp.com/pledges/[id] | DELETE | N/A | Bearer Token |
 
 
 
