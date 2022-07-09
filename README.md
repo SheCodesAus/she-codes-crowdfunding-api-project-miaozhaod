@@ -17,7 +17,7 @@
 - [x] A logged in user can make a pledge
 - [x] The supporter can delete their pledge
 
-## An API specification
+## API specification
 | Endpoint | Method | Body| Authorization |
 | ---------| -------| --- | ------------- |
 | **Users and Authentication Endpoints:**|
@@ -38,11 +38,13 @@
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/ | POST | <pre><code>{</code><br><code>  "amount": 10,</code><br><code>  "comment": "comment",</code><br><code>  "anonymous": false,</code><br><code>  "id": 1,</code><br><code>}</code></pre> | Bearer Token |
 | https://she-codes-crowdfunding-miao.herokuapp.com/pledges/[id] | DELETE | N/A | Bearer Token |
 
-## A database schema
+## Database schema
 <img width="1017" alt="Screen Shot 2022-07-09 at 5 17 59 pm" src="https://user-images.githubusercontent.com/89491470/178095972-e1b66bd5-0382-4471-8b31-3b5a4a1b15d7.png">
 
 ## Insomnia Screenshots
-### Detailed screenshots can be found at the folder named `screenshots`, here is how Insomnia's environment is setup:
+- Detailed screenshots can be found under the branch `screenshots`, in the root path at the folder named `screenshots`, 👉🏻 [Link](https://github.com/SheCodesAus/she-codes-crowdfunding-api-project-miaozhaod/tree/screenshots/screenshots)
+- Alternatively, if you found that's not easy to view, all the screenshots can also be accessed at [Google Drive](https://drive.google.com/drive/folders/1ZXDf9O3ODB9W7WRFe-u7sK_ZYSDQC0TG?usp=sharing)
+- Here is how Insomnia's environment is setup:
 <img width="1552" alt="Endpoints" src="https://user-images.githubusercontent.com/89491470/178096594-ec811e97-e216-4ba9-81f8-2fcaf78b2951.png">
 
 ## Wireframes
