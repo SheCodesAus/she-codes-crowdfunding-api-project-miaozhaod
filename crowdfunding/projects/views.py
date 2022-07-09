@@ -7,7 +7,7 @@ from .models import Project, Pledge
 from .serializers import ProjectSerializer, PledgeSerializer, ProjectDetailSerializer
 from django.http import Http404
 from rest_framework import status, permissions
-from .permissions import IsOwnerOrReadOnly
+from .permissions import IsOwnerOrReadOnly, IsSupporterOrReadOnly
 
 class PledgeList(APIView):
     def get(self, request):
@@ -25,14 +25,16 @@ class PledgeList(APIView):
 
 
 class PledgeDetail(APIView):
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsSupporterOrReadOnly]
 
     def get_object(self, pk):
         try:
-            return Pledge.objects.get(pk=pk)
+            pledge = Pledge.objects.get(pk=pk)
+            self.check_object_permissions(self.request, pledge)
+            return pledge
         except Pledge.DoesNotExist:
             raise Http404
-
+            
     def get(self, request, pk):
         pledge = self.get_object(pk)
         serializer = PledgeSerializer(pledge)
