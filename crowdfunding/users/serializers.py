@@ -20,6 +20,7 @@ class CustomUserSerializer(serializers.Serializer):
         instance.email = validated_data.get('email', instance.email)
         instance.bio = validated_data.get('bio', instance.bio)
         instance.avatar = validated_data.get('avatar', instance.avatar)
-        instance.password = make_password(validated_data.get('password', instance.password))
+        if "password" in validated_data.keys():
+            instance.password = make_password(validated_data.get('password', instance.password))
         instance.save()
         return instance
