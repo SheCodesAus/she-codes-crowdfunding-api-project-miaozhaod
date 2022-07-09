@@ -20,5 +20,5 @@ Raise funds for photographers who would like to hold their own exhibitions, the 
 ## An API specification
 | Endpoint                                                  | Method    | Body                   | Authorization |
 | --------------------------------------------------------- | --------- | ---------------------- | ------------- |
-| https://she-codes-crowdfunding-miao.herokuapp.com/users/  | POST      | <pre><code>{</code><br><code>  "username": "test",</code><br><code>  "email": "test@mysite.com",</code><code>  "password": "password",</code><br><code>  "bio": "bio",</code><br><code>  "avatar": "https://avatar.com",</code><br><code>}</code></pre> | N/A          |
+| https://she-codes-crowdfunding-miao.herokuapp.com/users/  | POST      | <pre><code>{</code><br><code>  "username": "test",</code><br><code>  "email": "test@mysite.com",</code><br><code>  "password": "password",</code><br><code>  "bio": "bio",</code><br><code>  "avatar": "https://avatar.com",</code><br><code>}</code></pre> | N/A          |
  
